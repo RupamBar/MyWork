@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <style>
+        body {
+            padding: 50px 100px;
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 10px;
+            background-color: rebeccapurple;
+            color: whitesmoke;
+            margin: 0px;
+        }
+        
+        textarea {
+            width: 99.5%;
+            font-size: 20px;
+            border: 2px solid rebeccapurple;
+            background-color: thistle;
+            margin: 0px;
+        }
+        
+        p {
+            text-align: center;
+            padding: 10px;
+            background-color: rebeccapurple;
+            color: whitesmoke;
+            margin: 0px;
+            font-size: 25px;
+        }
+        
+        #btn {
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Word and Character Counter</h1>
+    <textarea name="" id="text" cols="30" rows="10" autofocus></textarea>
+    <p>
+        <span id="words">0</span> words and
+        <span id="chars">0</span> characters
+    </p>
+    <button id="btn">Reload</button>
+
+    <script>
+        let textarea = document.getElementById("text");
+        textarea.addEventListener("input", function() {
+            let text = textarea.value;
+            let chars = document.getElementById("chars");
+            chars.innerHTML = text.length;
+
+            text = text.trim();
+            text = text.split(" ");
+            // let cleanList = text.filter(function(elm) {
+            //     return elm != "";
+            // })
+            let cleanList = [];
+            let j = 0;
+            for (i = 0; i < text.length; i++) {
+                if (text[i] != "") {
+                    cleanList[j] = text[i];
+                    j++;
+                }
+            }
+            let words = document.getElementById("words");
+            words.innerHTML = cleanList.length;
+        });
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function() {
+            location.reload();
+        });
+    </script>
+</body>
+
+</html>
