@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body {
+            padding: 50px 100px;
+            margin: 0px;
+        }
+        
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        p {
+            text-align: center;
+            text-align: justify;
+            font-size: 18px;
+        }
+        
+        #colors {
+            text-align: center;
+        }
+        
+        .color {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            border: 1px solid cadetblue;
+            border-radius: 25%;
+            cursor: pointer;
+        }
+        
+        #white {
+            background-color: white;
+        }
+        
+        #aqua {
+            background-color: aqua;
+        }
+        
+        #violet {
+            background-color: blueviolet;
+        }
+        
+        #black {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="colors">
+        <span class="color" id="white" onclick="changeBG('white')"></span>
+        <span class="color" id="aqua" onclick="changeBG('aqua')"></span>
+        <span class="color" id="violet" onclick="changeBG('blueviolet')"></span>
+        <span class="color" id="black" onclick="changeBG('black')"></span>
+    </div>
+    <h1 class="text">Background Changer</h1>
+    <img src="https://www.impactplus.com/hs-fs/hubfs/blog-image-uploads/best-about-us-pages.jpg?length=980&name=best-about-us-pages.jpg" alt="">
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi quasi illo debitis, magni et temporibus blanditiis ut atque eveniet dignissimos sequi. Eius molestias esse ea optio fuga dolore molestiae deleniti porro, quisquam ipsa culpa ad.
+        Doloribus possimus, id odit quis, repellendus enim fuga suscipit a voluptatibus, ipsam dolorem itaque molestiae iusto incidunt expedita hic labore. Esse obcaecati dolorum ducimus sunt praesentium! Porro accusamus repellat aut, repudiandae sit
+        officia nostrum commodi optio, qui quasi quas voluptatibus deleniti, saepe ut aliquid similique enim soluta sapiente? Ipsa labore, dicta non vitae facilis quisquam explicabo repellendus. Alias quis dicta aspernatur, numquam ea perspiciatis explicabo
+        voluptatem fugiat iusto modi ullam, velit qui eos quidem beatae id repellat omnis laboriosam molestiae assumenda? Libero eveniet error ipsum assumenda ratione incidunt beatae. Possimus aliquam labore consequatur ratione. Numquam repellat aut reprehenderit
+        qui labore quod laudantium alias, doloribus earum vitae explicabo ipsum eligendi saepe reiciendis nihil. Consequatur accusantium ipsum officia suscipit aut, odio sint similique magni omnis voluptatem. Ut, consequatur, consequuntur sit provident
+        optio ducimus animi repudiandae esse assumenda et ipsam doloribus perspiciatis nobis odio ea temporibus hic. Aspernatur odio mollitia esse tenetur ut porro quidem omnis quia ratione? Aliquid ad cupiditate quia molestias sint eum, officia ipsum
+        numquam reiciendis molestiae enim temporibus sed quas reprehenderit, aperiam esse eaque adipisci laudantium tenetur recusandae. Officia beatae dicta voluptas necessitatibus ducimus repellat cumque accusantium ad totam quia rem error eligendi fugit
+        adipisci blanditiis odit laborum sed neque sunt optio, laboriosam odio esse tempora. Impedit dolor ipsum quibusdam optio ex ratione pariatur inventore necessitatibus? Ratione, quam voluptates reprehenderit tempora cumque repellendus voluptatibus
+        eius ad voluptatum. Ipsa cupiditate qui beatae aspernatur a saepe quo esse! Voluptate vero mollitia et voluptatum nam deserunt eos quibusdam pariatur a magnam. Excepturi earum tenetur iusto dignissimos doloremque placeat commodi eveniet aperiam
+        doloribus. Minima, enim necessitatibus vel quaerat neque expedita nulla consequuntur velit incidunt perspiciatis nostrum eos quisquam sint labore non, eveniet, sit vitae ab? Tempora vitae nihil quia accusantium. Tenetur repellat id dolor cupiditate
+        facilis! Illum corporis repudiandae voluptatibus neque fuga, eius repellat necessitatibus, aut distinctio molestiae animi accusantium temporibus tempora praesentium. Nostrum excepturi itaque laborum eius qui explicabo quidem tempore nesciunt inventore.
+        Accusamus pariatur voluptatibus velit aliquam delectus voluptate in, nostrum doloremque! Accusamus molestias, aperiam, tempore impedit doloribus, natus fugit ipsa nostrum velit ipsum fuga pariatur neque omnis dicta temporibus sit? Asperiores expedita
+        sed commodi culpa? Ullam possimus porro fugit, architecto libero quo veritatis delectus molestiae consequatur, repudiandae aperiam modi. Molestiae a fugiat deleniti ullam quo, numquam, incidunt ipsa culpa eos aspernatur tempore obcaecati suscipit
+        iure itaque debitis ab hic voluptatem rerum! Sequi architecto id amet dolor perferendis, distinctio quasi quos beatae sapiente quia illo ipsum reiciendis dolore, eos laudantium reprehenderit aliquid numquam fugiat. Rerum maxime, alias natus fugit
+        corporis officia illo corrupti nam repellat at labore magnam sit. Et doloremque omnis dolorum animi iusto modi facilis vel ipsum, sapiente porro blanditiis voluptates earum recusandae autem in minima excepturi. Deleniti architecto exercitationem
+        molestias vel vero. Iure mollitia praesentium fuga itaque, vitae nobis ipsum maiores odit.
+    </p>
+
+    <script>
+        // let white = document.getElementById("white");
+        // white.addEventListener("click", changeBG("white"));
+
+        // let aqua = document.getElementById("aqua");
+        // aqua.addEventListener("click", changeBG("aqua"));
+
+        // let violet = document.getElementById("violet");
+        // violet.addEventListener("click", changeBG("blueviolet"));
+
+        // let black = document.getElementById("black");
+        // black.addEventListener("click", changeBG("black"));
+
+        function changeBG(elm) {
+            document.body.style.backgroundColor = elm;
+            let text = document.getElementsByClassName("text");
+            if (elm == "black" || elm == "blueviolet") {
+                for (let i = 0; i < text.length; i++) {
+                    text[i].style.color = "white";
+                }
+            } else {
+                for (let i = 0; i < text.length; i++) {
+                    text[i].style.color = "black";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
