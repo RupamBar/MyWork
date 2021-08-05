@@ -1,0 +1,18 @@
+let slides = document.getElementsByClassName("slide");
+var flag = 0;
+imageShowOf(flag);
+
+function imageShowOf(num) {
+    flag = flag + num;
+    if (flag < 0) {
+        flag = slides.length - 1;
+    }
+    if (flag > slides.length - 1) {
+        flag = 0;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; // all will off
+    }
+    slides[flag].style.display = "block"; // particular 1 will be on
+    // console.log(flag);
+}
