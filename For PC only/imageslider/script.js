@@ -4,12 +4,6 @@ imageShowOf(flag);
 
 let inter = setInterval(imageShowOf, 2000);
 
-// function stopInterval() {
-//     clearInterval(interval);
-// }
-
-
-
 function imageShowOf(num = 1) {
     flag = flag + num;
     if (flag < 0) {
