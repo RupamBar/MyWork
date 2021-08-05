@@ -4,7 +4,13 @@ imageShowOf(flag);
 
 let inter = setInterval(imageShowOf, 2000);
 
-function imageShowOf(num) {
+// function stopInterval() {
+//     clearInterval(interval);
+// }
+
+
+
+function imageShowOf(num = 1) {
     flag = flag + num;
     if (flag < 0) {
         flag = slides.length - 1;
@@ -23,4 +29,5 @@ function imageShowOf(num) {
             clearInterval(inter);
         });
     }
+
 }
