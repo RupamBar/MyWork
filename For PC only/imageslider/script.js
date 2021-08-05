@@ -15,4 +15,10 @@ function imageShowOf(num) {
     }
     slides[flag].style.display = "block"; // particular 1 will be on
     // console.log(flag);
+    let pointer = document.getElementsByClassName("pointer");
+    for (let i = 0; i < pointer.length; i++) {
+        pointer[i].addEventListener("click", function() {
+            clearInterval(inter);
+        });
+    }
 }
