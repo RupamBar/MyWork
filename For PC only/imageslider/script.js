@@ -2,6 +2,8 @@ let slides = document.getElementsByClassName("slide");
 var flag = 0;
 imageShowOf(flag);
 
+let inter = setInterval(imageShowOf, 2000);
+
 function imageShowOf(num) {
     flag = flag + num;
     if (flag < 0) {
